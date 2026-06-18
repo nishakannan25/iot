@@ -1,12 +1,9 @@
 from processing.data_processor import process_data
 
-def test_data_processing():
-
+def test_processing():
     data = {
         "temperature": 30,
-        "humidity": 70
+        "humidity": 60
     }
 
-    result = process_data(data)
-
-    assert result == 50
+    assert process_data(data) == 45
